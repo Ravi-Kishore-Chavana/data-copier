@@ -42,8 +42,8 @@
 
 import os
 import sys
-from read import get_json_reader
-from write import load_db_table
+from app.read import get_json_reader
+from app.write import load_db_table
 
 def process_tables(BASE_DIR, conn, table_name):
     json_reader = get_json_reader(BASE_DIR, table_name)
