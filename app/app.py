@@ -84,3 +84,6 @@ def main():
     conn = f'postgresql://{configs["DB_USER"]}:{configs["DB_PASS"]}@{configs["DB_HOST"]}:{configs["DB_PORT"]}/{configs["DB_NAME"]}'
     for table_name in table_names:
         process_table(BASE_DIR, conn, table_name)
+
+if __name__ == '__main__':
+     main()
